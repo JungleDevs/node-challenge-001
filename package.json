@@ -1,0 +1,28 @@
+{
+  "name": "node-challenge-001",
+  "version": "1.0.0",
+  "description": "Node challenge 001",
+  "repository": "https://github.com/JungleDevs/node-challenge-001",
+  "author": "Vinicius de Morais Justo",
+  "license": "MIT",
+  "private": false,
+  "engineStrict": true,
+  "engines": {
+    "node": "12"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon --watch src --exec babel-node src/app.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/node": "^7.12.6",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.21.12",
+    "objection": "^2.2.3",
+    "pg": "^8.5.1"
+  }
+}
