@@ -1,9 +1,9 @@
-import express from "express";
+import express from 'express';
 
 const app = express();
 
-app.get("*", (req, res) => {
-  res.send("Hello World!");
+app.get('*', (req, res) => {
+  res.send('Hello World!');
 });
 
-app.listen(process.env.PORT || "8080");
+app.listen(process.env.PORT || '8080');
