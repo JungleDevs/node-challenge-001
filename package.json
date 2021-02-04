@@ -11,15 +11,14 @@
     "node": "12"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon --watch src --exec babel-node src/app.js"
+    "dev": "cross-env NODE_ENV=development nodemon -r esm --watch src src/app.js"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9",
-    "@babel/node": "^7.12.6",
     "cross-env": "^7.0.3",
     "nodemon": "^2.0.6"
   },
   "dependencies": {
+    "esm": "^3.2.25",
     "express": "^4.17.1",
     "knex": "^0.21.12",
     "objection": "^2.2.3",
