@@ -21,6 +21,7 @@
     "prettier": "^2.2.1"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "esm": "^3.2.25",
