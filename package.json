@@ -25,6 +25,7 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "esm": "^3.2.25",
     "express": "^4.17.1",
+    "helmet": "^4.4.1",
     "knex": "^0.21.12",
     "morgan": "^1.10.0",
     "objection": "^2.2.3",
