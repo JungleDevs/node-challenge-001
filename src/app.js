@@ -10,7 +10,8 @@ const app = express();
 app.use(cors());
 app.use(helmet());
 app.use(morgan('common'));
+app.use(express.json());
 
 app.use(router);
 
-app.listen(process.env.PORT || '8080');
+export default app;
