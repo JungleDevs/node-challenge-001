@@ -1,5 +1,40 @@
 # Jungle Devs - Node Challenge #001
 
+## Roadmap
+
+- [x] Linter
+- [x] Express setup
+- [x] Logger
+- [x] Database setup
+- [ ] Register
+- [ ] Login
+- [ ] Logout
+- [ ] Authors repository
+- [ ] Articles repository
+- [ ] Category repository
+- [ ] **Admin** Category Create
+- [ ] **Admin** Category Read
+- [ ] **Admin** Category Update
+- [ ] **Admin** Category Delete
+- [ ] **Admin** Authors Create
+  - [ ] File import
+- [ ] **Admin** Authors Read
+- [ ] **Admin** Authors Update
+- [ ] **Admin** Authors Delete
+- [ ] **Admin** Articles Create
+- [ ] **Admin** Articles Read by ID
+- [ ] **Admin** Articles Read by category
+- [ ] **Admin** Articles Update
+- [ ] **Admin** Articles Delete
+- [ ] **Logged** Articles Read by ID
+- [ ] **Anonymous** Articles Read by ID
+
+####
+
+- [ ] Dockerfile
+- [ ] Readme update
+- [ ] API Documentation
+
 ## Description
 
 **Challenge goal**: The purpose of this challenge is to give an overall understanding of a backend application. You’ll be implementing a simplified version of news provider API. The concepts that you’re going to apply are:
@@ -28,6 +63,7 @@
   - CRUD `/api/admin/authors`
   - CRUD `/api/admin/articles`
 - List article endpoint `/api/articles?category=:slug` with the following response:
+
 ```json
 [
   {
@@ -42,40 +78,41 @@
   ...
 ]
 ```
+
 - Article detail endpoint `/api/articles/:id` with different responses for anonymous and logged users:
 
-    **Anonymous**
-    ```json
-    {
-      "author": {
-        "name": "Author Name",
-        "picture": "https://picture.url"
-      },
-      "category": "Category",
-      "title": "Article title",
-      "summary": "This is a summary of the article",
-      "firstParagraph": "<p>This is the first paragraph of this article</p>"
-    }
-    ```
+  **Anonymous**
 
-    **Logged user**
-    ```json
-    {
-      "author": {
-        "name": "Author Name",
-        "picture": "https://picture.url"
-      },
-      "category": "Category",
-      "title": "Article title",
-      "summary": "This is a summary of the article",
-      "firstParagraph": "<p>This is the first paragraph of this article</p>",
-      "body": "<div><p>Second paragraph</p><p>Third paragraph</p></div>"
-    }
-    ```
+  ```json
+  {
+    "author": {
+      "name": "Author Name",
+      "picture": "https://picture.url"
+    },
+    "category": "Category",
+    "title": "Article title",
+    "summary": "This is a summary of the article",
+    "firstParagraph": "<p>This is the first paragraph of this article</p>"
+  }
+  ```
 
+  **Logged user**
+
+  ```json
+  {
+    "author": {
+      "name": "Author Name",
+      "picture": "https://picture.url"
+    },
+    "category": "Category",
+    "title": "Article title",
+    "summary": "This is a summary of the article",
+    "firstParagraph": "<p>This is the first paragraph of this article</p>",
+    "body": "<div><p>Second paragraph</p><p>Third paragraph</p></div>"
+  }
+  ```
 
 ## Instructions to Run
 
 - Database: `docker-compose up` will start the PostgreSQL DB
 - `yarn dev` is configured to start the app.js using nodemon
-
