@@ -4,7 +4,7 @@ import helmet from 'helmet';
 import cors from 'cors';
 
 import './database';
-import router from './routes';
+import routerV1 from './routes/v1';
 
 const app = express();
 
@@ -13,6 +13,6 @@ app.use(helmet());
 app.use(morgan('common'));
 app.use(express.json());
 
-app.use(router);
+app.use('/api/v1', routerV1);
 
 export default app;

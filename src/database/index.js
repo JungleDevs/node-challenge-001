@@ -5,6 +5,4 @@ import knexConfig from '../../knexfile';
 
 const dbInstance = knex(knexConfig);
 
-console.log(knexConfig);
-
 Model.knex(dbInstance);
