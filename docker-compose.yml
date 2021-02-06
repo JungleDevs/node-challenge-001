@@ -3,7 +3,7 @@ services:
   db:
     image: postgres:10
     ports:
-      - "5432:5432"
+      - '5432:5432'
     environment:
-      POSTGRES_PASSWORD: "postgres"
-      POSTGRES_DB: "challenge"
+      POSTGRES_PASSWORD: 'postgres'
+      POSTGRES_DB: 'challenge'
