@@ -6,7 +6,7 @@ exports.up = async knex => {
     table.string('name').notNullable();
     table.unique('email');
 
-    table.timestamps();
+    table.timestamps(true, true);
   });
 };
 

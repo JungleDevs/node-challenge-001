@@ -4,7 +4,7 @@ import helmet from 'helmet';
 import cors from 'cors';
 
 import './shared/database';
-import routerV1 from './shared/routes/v1';
+import routerV1 from './shared/router/v1';
 
 const app = express();
 
