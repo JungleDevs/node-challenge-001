@@ -3,8 +3,8 @@ import morgan from 'morgan';
 import helmet from 'helmet';
 import cors from 'cors';
 
-import './database';
-import routerV1 from './routes/v1';
+import './shared/database';
+import routerV1 from './shared/routes/v1';
 
 const app = express();
 
