@@ -18,6 +18,12 @@ class User extends Model {
       },
     };
   }
+
+  $formatJson(json) {
+    json = super.$formatJson(json);
+    delete json.password;
+    return json;
+  }
 }
 
 export default User;

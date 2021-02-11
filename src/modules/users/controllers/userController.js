@@ -1,9 +1,9 @@
-import createUserService from '../services/createUserService';
+import { CreateUserService } from '../services';
 
 async function create(request, response) {
-  const { email, name, password } = request.body;
+  const { name, email, password } = request.body;
 
-  const user = await createUserService.execute(email, name, password);
+  const user = await CreateUserService.execute(name, email, password);
 
   response.status(201).send(user);
 }

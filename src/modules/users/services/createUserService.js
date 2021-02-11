@@ -1,17 +1,17 @@
-import User from '../entities';
+import bcrypt from 'bcryptjs';
 
-async function execute(email, name, password) {
-  const userExists = await User.query().findOne({ email });
+import UserRepository from '../repositories';
+
+async function execute(name, email, password) {
+  const userExists = await UserRepository.findByEmail(email);
 
   if (userExists) {
     throw new Error('Email already in use');
   }
 
-  const user = await User.query().insert({
-    email,
-    name,
-    password,
-  });
+  const hashedPassword = await bcrypt.hash(password, 8);
+
+  const user = await UserRepository.create(name, email, hashedPassword);
 
   return user;
 }
