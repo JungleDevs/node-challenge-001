@@ -18,7 +18,7 @@ async function execute(email, password) {
   }
 
   const token = sign({}, JWT_SECRET, {
-    subject: toString(user.id),
+    subject: user.id.toString(),
     expiresIn: 60 * 60 * 60 * 2, // 2 hours
   });
 

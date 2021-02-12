@@ -5,7 +5,7 @@ import SessionsRouter from '../../../modules/sessions/router';
 
 const router = new Router();
 
-router.use(UserRouter);
 router.use(SessionsRouter);
+router.use(UserRouter);
 
 export default router;
