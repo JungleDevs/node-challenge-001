@@ -1,5 +1,7 @@
 import { compare } from 'bcryptjs';
+import { sign } from 'jsonwebtoken';
 
+import { JWT_SECRET } from '../../../config';
 import UserRepository from '../../users/repositories';
 
 async function execute(email, password) {
@@ -15,7 +17,12 @@ async function execute(email, password) {
     throw Error('Invalid credential');
   }
 
-  return { user };
+  const token = sign({}, JWT_SECRET, {
+    subject: toString(user.id),
+    expiresIn: 60 * 60 * 60 * 2, // 2 hours
+  });
+
+  return { user, token };
 }
 
 export default {

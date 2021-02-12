@@ -7,7 +7,7 @@
 - [x] Logger
 - [x] Database setup
 - [ ] Register
-- [ ] Login
+- [x] Login
 - [ ] Logout
 - [ ] Authors repository
 - [ ] Articles repository
