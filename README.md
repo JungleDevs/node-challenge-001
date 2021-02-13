@@ -8,21 +8,21 @@
 - [x] Database setup
 - [x] Error handling
 - [x] Not found
-- [ ] Register
+- [x] Register
 - [x] Login
 - [ ] Logout
-- [ ] Authors repository
+- [x] Authors repository
 - [ ] Articles repository
 - [ ] Category repository
 - [ ] **Admin** Category Create
 - [ ] **Admin** Category Read
 - [ ] **Admin** Category Update
 - [ ] **Admin** Category Delete
-- [ ] **Admin** Authors Create
+- [x] **Admin** Authors Create
   - [ ] File import
-- [ ] **Admin** Authors Read
-- [ ] **Admin** Authors Update
-- [ ] **Admin** Authors Delete
+- [x] **Admin** Authors Read
+- [x] **Admin** Authors Update
+- [x] **Admin** Authors Delete
 - [ ] **Admin** Articles Create
 - [ ] **Admin** Articles Read by ID
 - [ ] **Admin** Articles Read by category
