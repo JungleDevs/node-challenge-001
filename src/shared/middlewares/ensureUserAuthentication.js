@@ -20,7 +20,6 @@ export default function ensureUserAuthentication(request, response, next) {
 
     next();
   } catch (error) {
-    console.error(error);
     throw new Error('Invalid JWT token.');
   }
 }
