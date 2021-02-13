@@ -19,7 +19,7 @@
 - [ ] **Admin** Category Update
 - [ ] **Admin** Category Delete
 - [x] **Admin** Authors Create
-  - [ ] File import
+  - [x] File import
 - [x] **Admin** Authors Read
 - [x] **Admin** Authors Update
 - [x] **Admin** Authors Delete
