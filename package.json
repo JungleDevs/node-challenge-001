@@ -17,6 +17,7 @@
     "cross-env": "^7.0.3",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
+    "express-async-errors": "^3.1.1",
     "nodemon": "^2.0.6",
     "prettier": "^2.2.1"
   },

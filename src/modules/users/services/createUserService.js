@@ -6,7 +6,7 @@ async function execute(name, email, password) {
   const userExists = await UserRepository.findByEmail(email);
 
   if (userExists) {
-    throw { status: 400, message: 'Email already in use' };
+    throw { statusCode: 400, message: 'Email already in use' };
   }
 
   const hashedPassword = await bcrypt.hash(password, 8);
