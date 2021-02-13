@@ -6,6 +6,8 @@
 - [x] Express setup
 - [x] Logger
 - [x] Database setup
+- [x] Error handling
+- [x] Not found
 - [ ] Register
 - [x] Login
 - [ ] Logout
