@@ -116,3 +116,7 @@ dist
 .yarn/install-state.gz
 .pnp.*
 .tool-versions
+
+
+tmp/*
+!tmp/.gitkeep

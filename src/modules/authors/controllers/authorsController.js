@@ -3,7 +3,8 @@ import AuthorsRepository from '../repositories';
 
 async function create(request, response) {
   const { name } = request.body;
-  const author = await CreateAuthorService.execute(name);
+  const { filename: picture } = request.file;
+  const author = await CreateAuthorService.execute(name, picture);
   return response.status(201).json(author);
 }
 
